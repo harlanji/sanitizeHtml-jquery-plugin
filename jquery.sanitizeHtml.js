@@ -37,7 +37,7 @@ function sanitizeChildren( root, allowTags, allowAttrs ) {
 	allowAttrs = allowAttrs || defaultAllowAttrs;
 
 	$(root).children().each(function(i, child) {
-		sanitizeChildren( child, allowTags );
+		sanitizeChildren( child, allowTags, allowAttrs );
 
 		var tag = child.localName.toLowerCase();
 
@@ -95,7 +95,7 @@ $.fn.sanitizeHtml = function(allowTags, allowAttrs) {
 	allowTags = allowTags || defaultAllowTags;
 	allowAttrs = allowAttrs || defaultAllowAttrs;
 
-	sanitizeChildren( this, allowTags );
+	sanitizeChildren( this, allowTags, allowAttrs );
 
 	return $(this);
 }
