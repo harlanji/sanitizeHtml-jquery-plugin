@@ -5,7 +5,7 @@
     <groupId>com.soashable.jquery</groupId>
     <artifactId>sanitizeHtml-jquery-plugin</artifactId>
     <packaging>javascript</packaging>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 
     <name>jQuery sanitizeHtml plugin</name>
 	<description>A plugin to sanitize HTML using DOM rather than regex</description>
